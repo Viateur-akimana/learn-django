@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django forms</title>
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}" />
+</head>
+<body>
+    <header>
+        <h1>Working with forms</h1>
+    </header>
+
+    <main>
+        <img
+            src="{% static 'images/python.png' %}"
+            alt="Python Logo"
+            class="logo"
+        />
+
+        <a href="{% url 'contact' %}" class="contact">Contact us</a> 
+
+        <p>
+            This page demonstrates how to work with forms in Django. Forms are an 
+            essential part of web applications, allowing users to input data that 
+            can be processed and stored. You can create forms to handle user input 
+            for various purposes, such as contact forms, registration forms, and more.
+             Let's explore how to create, validate, and process forms in Django!
+        </p>
+    </main>
+    
+</body>
+</html>
