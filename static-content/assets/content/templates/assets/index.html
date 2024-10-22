@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Static Assets</title>
+
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}" />
+  </head>
+  <body>
+    <header>
+      <h1>Hello Static Assets</h1>
+    </header>
+
+    <main>
+      <img
+        src="{% static 'images/python.png' %}"
+        alt="Python Logo"
+        class="logo"
+      />
+
+      <button id="alertButton">Click Me!</button>
+
+      <p>
+        Welcome to the Django static assets demo. This page demonstrates how to
+        use CSS, JavaScript, and images served from the Django static folder.
+        You can interact with the button to see a JavaScript alert in action!
+      </p>
+    </main>
+    <script src="{% static 'js/index.js' %}"></script>
+  </body>
+</html>
